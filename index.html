@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Covid-19</title>
+    <link rel="icon" href="./res/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet/scss" href="./css/style.scss">
+</head>
+<body>
+    <main class="main-component">
+        <div class="deco-part"></div>
+        <div class="form-part">
+            <h1>Diagnostic Covid-19</h1>
+            <p>Formulaire d’autoévaluation des symptômes de la COVID-19.Le présent formulaire ne remplace pas une consultation médicale. Respectez toujoursles consignes que vous donne un professionnel de la santé.</p>
+            <h2>Informations Personnelles</h2>
+            <input type="text" placeholder="Votre nom">
+            <input type="text" placeholder="Votre prenom">
+            <input type="date">
+            <input type="text" placeholder="Votre adresse">
+            <input type="text" placeholder="Votre pays">
+            <input type="number" placeholder="Votre numero de telephone">
+            <input type="email" placeholder="Votre adresse">
+            <h2>Maladies chroniques</h2>
+            <p>Avez-vous des maladies chroniques ?</p>
+            <div class="inp-box">
+                <input type="checkbox" name="cardiaque" id="cardiaque">
+                <label for="cardiaque">Maladie cardiaque</label>
+            </div>
+            <div class="inp-box">
+                <input type="checkbox" name="Pulmonaire" id="Pulmonaire">
+                <label for="Pulmonaire">Maladie Pulmonaire</label>
+            </div>
+            <div class="inp-box">
+                <input type="checkbox" name="Diabète" id="Diabète">
+                <label for="Diabète">Diabète</label>
+            </div>
+            <div class="inp-box">
+                <input type="checkbox" name="Troubles" id="Troubles">
+                <label for="Troubles">Troubles auto-immunitaire</label>
+            </div>
+            <h2>Les symptômes les plus communs</h2>
+            
+            <div class="ouinon">
+                <p>Est-ce que votre température corporelle a dépassée 38° ?</p>
+                <div class="oui">
+                    <input type="radio" name="temp" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="temp" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ?</p>
+                <div class="oui">
+                    <input type="radio" name="fatigué" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="fatigué" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Avez-vous de la toux ? Quelle sorte ?</p>
+                <div class="oui">
+                    <input type="radio" name="toux" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="toux" id="non"><label>non</label>
+                </div>
+            </div>
+            <h2>Les symptômes Sévères</h2>
+            
+            <div class="ouinon">
+                <p>Avez-vous eu des difficultés à respirer ou un essoufflement ?</p>
+                <div class="oui">
+                    <input type="radio" name="respirer" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="respirer" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
+                <div class="oui">
+                    <input type="radio" name="pressions" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="pressions" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Avez-vous eu une perte de la parole ou du mouvement ?</p>
+                <div class="oui">
+                    <input type="radio" name="pressions" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="pressions" id="non"><label>non</label>
+                </div>
+            </div>
+            <h2>Les symptômes moins communs</h2>
+            
+            <div class="ouinon">
+                <p>Avez-vous eu une perte du goût de l’odorat ?</p>
+                <div class="oui">
+                    <input type="radio" name="goût" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="goût" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Avez-vous des maux de gorge ?</p>
+                <div class="oui">
+                    <input type="radio" name="goût" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="goût" id="non"><label>non</label>
+                </div>
+            </div>
+            
+            <div class="ouinon">
+                <p>Avez-vous des maux de tête ?</p>
+                <div class="oui">
+                    <input type="radio" name="goût" id="oui"><label>oui</label>
+                </div>
+                <div class="non">
+                    <input type="radio" name="goût" id="non"><label>non</label>
+                </div>
+            </div>
+            <button id="btn">envoyer</button>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
