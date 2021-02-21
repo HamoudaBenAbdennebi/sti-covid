@@ -9,8 +9,8 @@
     <link rel="stylesheet/scss" href="./css/style.scss">
 </head>
 <body>
-    <form class="main-component" onsubmit= "return verif() " action="index.html">
-        <div class="deco-part"></div>
+    <form class="main-component" onsubmit= "return verif() " method="GET" action="diagnostique.html">
+        <div class="deco-part"></div> 
         <div class="form-part">
             <h1>Diagnostic Covid-19</h1>
             <p>Formulaire d’autoévaluation des symptômes de la COVID-19.Le présent formulaire ne remplace pas une consultation médicale. Respectez toujoursles consignes que vous donne un professionnel de la santé.</p>
@@ -45,33 +45,33 @@
             <div class="ouinon">
                 <p>Est-ce que votre température corporelle a dépassée 38° ?</p>
                 <div class="oui">
-                    <input type="radio" name="temp" id="tempoui"><label>oui</label>
+                    <input type="radio" name="temp" id="tempoui"value="tempoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="temp" id="tempnon"><label>non</label>
+                    <input type="radio" name="temp" id="tempnon" value="tempnon"><label>non</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ?</p>
                 <div class="oui">
-                    <input type="radio" name="fatigué" id="fatiguéoui"><label>oui</label>
+                    <input type="radio" name="fatigue" id="fatiguéoui" value="fatigueoui"><label>plus</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="fatigué" id="fatiguénon"><label>non</label>
+                    <input type="radio" name="fatigue" id="fatiguénon" value="fatiguenon"><label>moins</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Avez-vous de la toux ? Quelle sorte ?</p>
                 <div class="oui">
-                    <input type="radio" name="toux" id="ouisèche"><label>Toux sèche</label>
+                    <input type="radio" name="toux" id="ouisèche" value="ouiseche"><label>Toux sèche</label>
                 </div>
                 <div class="oui">
-                    <input type="radio" name="toux" id="ouirégulière"><label>Toux régulière</label>
+                    <input type="radio" name="toux" id="ouirégulière" value="ouireguliere"><label>Toux régulière</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="toux" id="non"><label>non</label>
+                    <input type="radio" name="toux" id="non" value="touxnon"><label>non</label>
                 </div>
             </div>
             <h2>Les symptômes Sévères</h2>
@@ -79,30 +79,30 @@
             <div class="ouinon">
                 <p>Avez-vous eu des difficultés à respirer ou un essoufflement ?</p>
                 <div class="oui">
-                    <input type="radio" name="respirer" id="hard"><label>oui</label>
+                    <input type="radio" name="respirer" id="hard" value="respireroui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="respirer" id="nhard"><label>non</label>
+                    <input type="radio" name="respirer" id="nhard" value="respirernon"><label>non</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
                 <div class="oui">
-                    <input type="radio" name="pressions" id="hard"><label>oui</label>
+                    <input type="radio" name="pressions" id="hard" value="pressionsoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="pressions" id="nhard"><label>non</label>
+                    <input type="radio" name="pressions" id="nhard" value="pressionsnon"><label>non</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Avez-vous eu une perte de la parole ou du mouvement ?</p>
                 <div class="oui">
-                    <input type="radio" name="parole" id="hard"><label>oui</label>
+                    <input type="radio" name="parole" id="hard" value="paroleoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="parole" id="nhard"><label>non</label>
+                    <input type="radio" name="parole" id="nhard" value="parolenon"><label>non</label>
                 </div>
             </div>
             <h2>Les symptômes moins communs</h2>
@@ -110,30 +110,30 @@
             <div class="ouinon">
                 <p>Avez-vous eu une perte du goût de l’odorat ?</p>
                 <div class="oui">
-                    <input type="radio" name="goût" id="goûtoui"><label>oui</label>
+                    <input type="radio" name="gout" id="goûtoui" value="goutoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="goût" id="non"><label>non</label>
+                    <input type="radio" name="gout" id="non" value="goutnon"><label>non</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Avez-vous des maux de gorge ?</p>
                 <div class="oui">
-                    <input type="radio" name="gorge" id="gorgeoui"><label>oui</label>
+                    <input type="radio" name="gorge" id="gorgeoui" value="gorgeoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="gorge" id="non"><label>non</label>
+                    <input type="radio" name="gorge" id="non" value="gorgenon"><label>non</label>
                 </div>
             </div>
             
             <div class="ouinon">
                 <p>Avez-vous des maux de tête ?</p>
                 <div class="oui">
-                    <input type="radio" name="maux" id="mauxoui"><label>oui</label>
+                    <input type="radio" name="maux" id="mauxoui" value="mauxoui"><label>oui</label>
                 </div>
                 <div class="non">
-                    <input type="radio" name="maux" id="non"><label>non</label>
+                    <input type="radio" name="maux" id="non" value="mauxnon"><label>non</label>
                 </div>
             </div>
             <button id="btn" type="submit">envoyer</button>

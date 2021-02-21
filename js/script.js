@@ -1,4 +1,5 @@
 const verif = () => {
+  localStorage.clear()
   let name = document.getElementById("name").value;
   if (name.length < 3) {
     alert("verifier le nom");
@@ -94,14 +95,12 @@ const verif = () => {
     score += 1;
   }
 
+
+  let ls = window.localStorage
   if (score < 7 && age < 65) {
-    alert(
-      "Vous devirez aller bien, mais faites attention à vous, et n’oubliez pas de respecter les gestes barrières."
-    );
+    ls.setItem('msg',"Vous devirez aller bien, mais faites attention à vous, et n’oubliez pas de respecter les gestes barrières.")
   } else if (score < 7 && age < 65) {
-    alert(
-      "Vous devirez aller bien, mais vous devriez rester confiné chez vous."
-    );
+    ls.setItem('msg',"Vous devirez aller bien, mais vous devriez rester confiné chez vous.")
   }
   let v = false;
   let ck = document.querySelectorAll("#ck");
@@ -111,17 +110,18 @@ const verif = () => {
     }
   }
   if (score >= 7 && score <= 18 && v == false) {
-    alert(
-      "Vous avez des majeurs symptômes du COVID-19. Vous devriez vous confiner au plus vite, et faire un test de dépistage"
-    );
+    ls.setItem('msg',"Vous avez des majeurs symptômes du COVID-19. Vous devriez vous confiner au plus vite, et faire un test de dépistage")
   } else if (score > 7 && score < 18 && v == true) {
-    alert(
-      "• Précipitez-vous au centre COVID le plus proche pour être pris en charge."
-    );
+    ls.setItem('msg',"Précipitez-vous au centre COVID le plus proche pour être pris en charge.")
   }
   if (score > 18) {
-    alert(
-      "Précipitez-vous au centre COVID le plus proche pour être pris en charge."
-    );
+    ls.setItem('msg',"Précipitez-vous au centre COVID le plus proche pour être pris en charge.")
   }
+  ls.setItem('nom',name)
+  ls.setItem('prenom',prenom)
+  ls.setItem('age',age)
+  ls.setItem('adresse',adresse)
+  ls.setItem('pays',pays)
+  ls.setItem('numero',numero)
+  ls.setItem('email',email)
 };

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            background-image: url('./res/bg.jpeg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card{
+            width: 90%;
+            border: 2px solid white;
+            margin: 40px 0;
+            padding: 20px;
+        }
+        .cover{
+            background-color: rgba(0, 0, 0, 0.404);
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <main id="id" name='main'>
+        <div id="info-user" class="card">
+            <h2>Information personnels :</h2>
+            <p>Nom : <span id="name"></span></p>
+            <p>Prenom : <span id="prenom"></span></p>
+            <p>Age : <span id="age"></span></p>
+            <p>Adresse : <span id="adresse"></span></p>
+            <p>Pays : <span id="pays"></span></p>
+            <p>Numero : <span id="numero"></span></p>
+            <p>Email : <span id="email"></span></p>
+        </div>
+        <div id="containerCH" class="card">
+            <h2>Vous avez cocher : </h2>
+        </div>
+        <div class="billan card">
+            <h2>Votre billan :</h2>
+            <p id="bilan"></p>
+        </div>
+    </main>
+    <div class="cover"></div>
+
+    <script src="./js/diag.js"></script>
+</body>
+</html>
