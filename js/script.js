@@ -1,12 +1,44 @@
+const alphanumerique = (ch) =>{
+		ch=ch.toUpperCase();
+		i=0;
+		verife=true;
+		do
+		  {
+			if (     ((ch.charAt(i)>="A")&& (ch.charAt(i)<="Z")) ||  ((ch.charAt(i)>="0")&& (ch.charAt(i)<="9"))      )
+			   {i++;}
+			else
+			   { verife=false;}
+		  }
+		while (   (verife) && (i<ch.length)   );
+		return verife;
+}
+
+
+const alphabetique =(ch) =>{
+		ch=ch.toUpperCase();
+		i=0;
+		verife=true;
+		do
+		  {
+			if (     (ch.charAt(i)>="A")&& (ch.charAt(i)<="Z")      )
+			   {i++;}
+			else
+			   { verife=false;}
+		  }
+		while (   (verife) && (i<ch.length)   );
+		return verife;
+}
+
+
 const verif = () => {
   localStorage.clear()
   let name = document.getElementById("name").value;
-  if (name.length < 3) {
+  if (name.length < 3 ||alphanumerique(name)==false) {
     alert("verifier le nom");
     return false;
   }
   let prenom = document.getElementById("prenom").value;
-  if (prenom.length < 3) {
+  if (prenom.length < 3 ||alphanumerique(prenom)==false) {
     alert("verifier le prenom");
     return false;
   }
